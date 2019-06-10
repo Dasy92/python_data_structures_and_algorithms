@@ -52,7 +52,7 @@ class CircularDoubleLinkedList(object):
             self.root.prev = node
         else:
             node.prev = self.root
-            headnode = self.root.next
+            headnode = self.headnode()
             node.next = headnode
             headnode.prev = node
             self.root.next = node
